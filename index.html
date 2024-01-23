@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Search for Movies</h1>
+    <div id="id1">
+        <input type="text" placeholder="Type Movie Name" id="searchInput" onkeyup="handleSearchKeyUp(event)">
+        <button type="button" onclick="searchForMovies()">Search</button>
+    </div>
+    <div id="movieTableContainer" style="display: none;">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Poster</th>
+                    <th>Title</th>
+                    <th>Release Date</th>
+                    <th>Overview</th>
+                    <th>Vote Average</th>
+                </tr>
+            </thead>
+            <tbody id="movieTableBody"></tbody>
+        </table>
+    </div>
+    <div id="pagination" style="text-align: center;"></div>
+    <script src="script.js"></script>
+</body>
+</html>
